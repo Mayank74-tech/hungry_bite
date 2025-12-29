@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796313525500",
+    "project_id": "hungry-bite-d2519",
+    "storage_bucket": "hungry-bite-d2519.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796313525500:android:cda46d30423a6f1032cb79",
+        "android_client_info": {
+          "package_name": "com.example.hungry_bite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796313525500-4vjmstok5ugip74655lhobim3n5ube93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI0Zkv-Pwq8vTzAJoEe-8R6EqDnyyakmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796313525500-4vjmstok5ugip74655lhobim3n5ube93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
