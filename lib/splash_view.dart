@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:hungry_bite/main_tabview.dart';
 import 'package:hungry_bite/welcome_view.dart';
 import 'package:hungry_bite/home_view.dart';
 
@@ -30,7 +31,7 @@ class _SplashViewState extends State<SplashView> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const HomeView(),
+          builder: (context) => const MainTabview(),
         ),
       );
     } else {

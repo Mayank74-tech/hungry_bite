@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import '../common/color_extension.dart';
-
 class RoundTextfield extends StatelessWidget {
   final String hintText;
   final TextEditingController controller;
   final bool obscureText;
+  final Widget? left;
 
   const RoundTextfield({
     super.key,
     required this.hintText,
     required this.controller,
     this.obscureText = false,
+    this.left,
   });
 
   @override
@@ -29,7 +30,16 @@ class RoundTextfield extends StatelessWidget {
           hintText: hintText,
           hintStyle: TextStyle(color: TColor.placeholder),
           border: InputBorder.none,
-          contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+          prefixIcon: left != null
+              ? Padding(
+            padding: const EdgeInsets.only(left: 15, right: 10),
+            child: left,
+          )
+              : null,
+          prefixIconConstraints:
+          const BoxConstraints(minWidth: 20, minHeight: 20),
+          contentPadding:
+          const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
       ),
     );

@@ -63,7 +63,7 @@ class _LoginViewState extends State<LoginView> {
 
                 RoundTextfield(
                   hintText: "Your Email",
-                  controller: emailController,
+                  controller: emailController, left: null,
                 ),
 
                 const SizedBox(height: 30),
@@ -71,7 +71,7 @@ class _LoginViewState extends State<LoginView> {
                 RoundTextfield(
                   hintText: "Password",
                   controller: passwordController,
-                  obscureText: true,
+                  obscureText: true, left: null,
                 ),
 
                 const SizedBox(height: 40),
