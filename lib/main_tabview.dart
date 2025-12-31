@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hungry_bite/bottom_views/more_view.dart';
 import 'package:hungry_bite/common/color_extension.dart';
 import 'package:hungry_bite/common_widget/tab_button.dart';
 import 'package:hungry_bite/home_view.dart';
+import 'package:hungry_bite/menu/menu_view.dart';
+
+import 'bottom_views/offers_view.dart';
+import 'bottom_views/profile_view.dart';
 
 class MainTabview extends StatefulWidget {
   const MainTabview({super.key});
@@ -67,6 +72,8 @@ class _MainTabviewState extends State<MainTabview> {
                  {
                    selctTeb=0;
                    selectPageView =Container();
+                   selectPageView = MenuView();
+
                  }
                  if(mounted)
                  {
@@ -80,6 +87,7 @@ class _MainTabviewState extends State<MainTabview> {
                   {
                     selctTeb=1;
                     selectPageView =Container();
+                    selectPageView = OfferView();
                   }
                   if(mounted)
                   {
@@ -93,6 +101,7 @@ class _MainTabviewState extends State<MainTabview> {
                   {
                     selctTeb=3;
                     selectPageView =Container();
+                    selectPageView = ProfileView();
                   }
                   if(mounted)
                   {
@@ -107,6 +116,7 @@ class _MainTabviewState extends State<MainTabview> {
                   {
                     selctTeb=4;
                     selectPageView =Container();
+                    selectPageView = MoreView();
                   }
                   if(mounted)
                   {
